@@ -10,6 +10,10 @@ var year = fullDate.getFullYear();
 var hr = fullDate.getHours();
 var min = fullDate.getMinutes();
 var sec = fullDate.getSeconds();
+var footerContentWrap = document.querySelector("#contact .content-wrap");
+var copyright = document.createElement('p');
+copyright.innerHTML = 'Copyright &copy; ' + year + ' | Christopher Lampert';
+footerContentWrap.appendChild(copyright);
 
 switch (day) {
     case 1:
