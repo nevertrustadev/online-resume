@@ -175,6 +175,7 @@ nav a {
 .work {
     background: linear-gradient(rgba(69,105,144, 0.8), rgba(69,105,144, 0.8)),
                 url(../images/background-2.jpg) no-repeat fixed;
+	background-size: cover;
     border-bottom: 2px solid #114B5F;
     border-top: 4px solid #114B5F;
     color: #F1F7EE;
