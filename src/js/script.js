@@ -79,7 +79,6 @@ switch (month) {
     default:
         month = "Error: Unknown Month";
         break;
-
 }
 
 function checkTimes() {
