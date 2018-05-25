@@ -95,6 +95,7 @@ function checkTimes() {
     }
 }
 
+// runTheClock slows down when it minute is over - causes time to be out by a few seconds
 function runTheClock() {
 
     checkTimes();
