@@ -17,6 +17,36 @@ html {
 *************************************************/
 
 
+/*************************************************
+                    IMPORT FONTS
+*************************************************/
+@font-face {
+    font-family: calculator-font1;
+    src: url(../../fonts/digital-7.woff2);
+}
+
+@font-face {
+    font-family: calculator-font2;
+    src: url(../../fonts/digital-7.eot);
+}
+
+@font-face {
+    font-family: calculator-font3;
+    src: url(../../fonts/digital-7.svg);
+}
+
+@font-face {
+    font-family: calculator-font4;
+    src: url(../../fonts/digital-7.ttf);
+}
+
+@font-face {
+    font-family: calculator-font5;
+    src: url(../../fonts/digital-7.woff);
+}
+
+
+
 body{
     color: #114B5F;
     font-family: 'Droid Sans', sans-serif;
@@ -174,7 +204,7 @@ nav a {
 ************************************************************/
 .work {
     background: linear-gradient(rgba(69,105,144, 0.8), rgba(69,105,144, 0.8)),
-                url(../images/background-2.jpg) no-repeat fixed;
+                url(../../images/background-2.jpg) no-repeat fixed;
 	background-size: cover;
     border-bottom: 2px solid #114B5F;
     border-top: 4px solid #114B5F;
@@ -210,6 +240,17 @@ nav a {
     border-top: 2px solid #114B5F;
 }
 
+
+
+/************************************************************
+                 Clock Styles
+************************************************************/
+#time {
+    font-family: calculator-font1, calculator-font2,
+    calculator-font3, calculator-font4, calculator-font5, sans-serif;
+    font-size: 25px;
+    color: #000000;
+}
 /************************************************************
                  Media Queries
 ************************************************************/
