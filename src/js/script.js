@@ -99,26 +99,31 @@ function checkTimes() {
     }
 }
 
-// runTheClock slows down when the minute is over - causes time to be out by a few seconds
 function runTheClock() {
 
-    checkTimes();
-
-    if (sec < 60) {
-        timeField.innerHTML = "<p>" + hr + ":" + min + ":" + sec + "</p>";
+    if (sec == 0) {
         sec++;
+        checkTimes();
+        timeField.innerHTML = "<p>" + hr + ":" + min + ":" + sec + "</p>";
     } else {
-        sec = 0;
-        min ++;
-    }
+        sec++;
+        checkTimes();
+        if (sec < 60) {
+            timeField.innerHTML = "<p>" + hr + ":" + min + ":" + sec + "</p>";
+        } else {
+            sec = 0;
+            min ++;
+            if (min > 59) {
+                min = 0;
+                hr++;
+            }
 
-    if (min > 59) {
-        min = 0;
-        hr++;
-    }
-
-    if (hr > 23) {
-       hr = 0;
+            if (hr > 23) {
+                hr = 0;
+            }
+            checkTimes();
+            timeField.innerHTML = "<p>" + hr + ":" + min + ":" + sec + "</p>";
+        }
     }
 }
 
