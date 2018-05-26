@@ -99,17 +99,19 @@ function checkTimes() {
     }
 }
 
+function updateClock() {
+    checkTimes();
+    timeField.innerHTML = "<p>" + hr + ":" + min + ":" + sec + "</p>";
+}
 function runTheClock() {
 
     if (sec == 0) {
         sec++;
-        checkTimes();
-        timeField.innerHTML = "<p>" + hr + ":" + min + ":" + sec + "</p>";
+        updateClock();
     } else {
         sec++;
-        checkTimes();
         if (sec < 60) {
-            timeField.innerHTML = "<p>" + hr + ":" + min + ":" + sec + "</p>";
+            updateClock();
         } else {
             sec = 0;
             min ++;
@@ -121,15 +123,13 @@ function runTheClock() {
             if (hr > 23) {
                 hr = 0;
             }
-            checkTimes();
-            timeField.innerHTML = "<p>" + hr + ":" + min + ":" + sec + "</p>";
-        }
+            updateClock();        }
     }
 }
 
-checkTimes();
 dateField.innerHTML = "<p>" + day + " " + month + " " + date + " " + year + "</p>";
-timeField.innerHTML = "<p>" + hr + ":" + min + ":" + sec + "</p>";
+updateClock();
+runTheClock();
 setInterval(runTheClock, 1000);
 
 
