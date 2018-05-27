@@ -35,7 +35,7 @@ function configureClock() {
         case 6:
             day = "Sat";
             break;
-        case 7:
+        case 0:
             day = "Sun";
             break;
         default:
@@ -87,9 +87,6 @@ function configureClock() {
     dateField.innerHTML = "<p>" + day + " " + month + " " + date + " " + year + "</p>";
 }
 
-
-
-
 function checkTimes() {
     if (sec < 10 && typeof sec === "number") {
         sec = "0" + sec;
@@ -108,6 +105,7 @@ function updateClock() {
     checkTimes();
     timeField.innerHTML = "<p>" + hr + ":" + min + ":" + sec + "</p>";
 }
+
 function runTheClock() {
 
     if (sec == 0) {
@@ -128,13 +126,7 @@ function runTheClock() {
             if (hr > 23) {
                 hr = 0;
             }
-            updateClock();        }
+            updateClock();
+        }
     }
 }
-
-configureClock();
-updateClock();
-runTheClock();
-setInterval(runTheClock, 1000);
-
-
