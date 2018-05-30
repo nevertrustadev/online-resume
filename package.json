@@ -1,0 +1,7 @@
+{
+  "name": "online-resume",
+  "version": "0.0.1",
+  "dependencies": {
+    "focus-visible": "^4.1.4"
+  }
+}
