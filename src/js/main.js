@@ -1,5 +1,6 @@
 'use strict';
 
+createFooter();
 configureClock();
 updateClock();
 runTheClock();
