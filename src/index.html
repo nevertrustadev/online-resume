@@ -8,23 +8,25 @@
         <link href="https://fonts.googleapis.com/css?family=Droid+Sans:400,700|Neucha" rel="stylesheet">
         <link rel="stylesheet" href="css/styles.css">
         <script src="../node_modules/focus-visible/dist/focus-visible.min.js" defer></script>
+        <script src="../node_modules/wicg-inert/dist/inert.min.js" defer></script>
         <script src="js/footer.js" defer></script>
         <script src="js/clock.js" defer></script>
         <script src="js/main.js" defer></script>
     </head>
     <body>
         <header role="banner" id="about">
-            <button class="btn">
-                <div class="menu-btn"></div>
-                <div class="menu-btn"></div>
-                <div class="menu-btn"></div>
+            <button id="open-menu" class="btn menu-btn open-menu-button" aria-label="Open Menu">
+                <div class="menu-button-style"></div>
+                <div class="menu-button-style"></div>
+                <div class="menu-button-style"></div>
             </button>
-            <nav>
+            <nav id="side-menu" class="side-menu--closed">
+                <button id="close-menu" class="btn menu-btn close-menu-buton" aria-label="Close Menu">X   Close</button>
                 <ul>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#work">Work Experience</a></li>
-                    <li><a href="#education">Education</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                    <li><a class="nav-link" href="#about">About</a></li>
+                    <li><a class="nav-link" href="#work">Work Experience</a></li>
+                    <li><a class="nav-link" href="#education">Education</a></li>
+                    <li><a class="nav-link" href="#contact">Contact</a></li>
                 </ul>
             </nav>
             <div class="content-wrap header-content-wrap">
@@ -127,8 +129,8 @@
                     <a href="https://twitter.com/nevertrustadev" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i><span class="sr-only">Christopher Lampert's Twitter page</span></a>
                     <a href="https://www.linkedin.com/in/christopherjameslampert/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i><span class="sr-only">Christopher Lampert's LinkedIn page</span></a>
                     <a href="https://www.facebook.com/Lamps14" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i><span class="sr-only">Christopher Lampert's Facebook page</span></a>
-                    <div id="date"></div>
-                    <div id="time"></div>
+                    <div id="date" aria-hidden="true"></div>
+                    <div id="time" aria-hidden="true"></div>
                 </div>
             </div>
         </footer>

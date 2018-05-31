@@ -2,6 +2,7 @@
   "name": "online-resume",
   "version": "0.0.1",
   "dependencies": {
-    "focus-visible": "^4.1.4"
+    "focus-visible": "^4.1.4",
+    "wicg-inert": "^2.0.0"
   }
 }
