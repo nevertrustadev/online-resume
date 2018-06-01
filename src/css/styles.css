@@ -187,19 +187,18 @@ footer {
     margin: 6px 0;
 }
 
+
 .close-menu-buton {
-    font-size: 1.1em;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+    left: 0;
     color: #FFFFFF;
     font-weight: bold;
     font-family: 'Droid Sans', serif;
-    margin: 15px 5px;
 }
 
 .close-menu-buton:hover {
-    color: #E7F59E;
-}
-
-.close-menu-buton:focus {
     color: #E7F59E;
 }
 
@@ -209,13 +208,19 @@ footer {
 
 nav {
     background: #114B5F;
+    overflow: auto;
+    height: 100%;
     position: fixed;
+    z-index: 150;
+    width: 0;
     top: 0;
     left: 0;
-    height: 100%;
-    padding: 2px;
-    z-index: 150;
+    overflow-x: hidden;
+    transition: 0.5s;
+    display: inline-block;
 }
+
+
 
 nav ul {
     list-style-type: none;
@@ -236,14 +241,14 @@ nav a {
     font-weight: 700;
 }
 
-.side-menu--closed {
-    display: none;
-}
 
 .side-menu--open {
-    display: inline-block;
+    width: 250px;
 }
 
+.side-menu--closed {
+    width: 0;
+}
 /************************************************************
                  Work Experience Styles
 ************************************************************/
@@ -326,9 +331,7 @@ nav a {
     h2 {
         text-align: center;
     }
-    nav {
-        width: 100%;
-    }
+
 
     .download {
         position: static;
