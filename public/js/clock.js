@@ -1,15 +1,15 @@
 'use strict';
 
-var dateField = document.getElementById("date");
-var timeField = document.getElementById("time");
-var fullDate = new Date();
-var day = fullDate.getDay();
-var date = fullDate.getDate();
-var month = fullDate.getMonth();
-var year = fullDate.getFullYear();
-var hr = fullDate.getHours();
-var min = fullDate.getMinutes();
-var sec = fullDate.getSeconds();
+const dateField = document.getElementById("date");
+const timeField = document.getElementById("time");
+const fullDate = new Date();
+let day = fullDate.getDay();
+const date = fullDate.getDate();
+let month = fullDate.getMonth();
+const year = fullDate.getFullYear();
+let hr = fullDate.getHours();
+let min = fullDate.getMinutes();
+let sec = fullDate.getSeconds();
 
 function configureClock() {
     switch (day) {
@@ -104,7 +104,7 @@ function updateClock() {
 
 function runTheClock() {
 
-    if (sec == 0) {
+    if (sec === 0) {
         sec++;
         updateClock();
     } else {
