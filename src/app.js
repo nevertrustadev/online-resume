@@ -23,6 +23,7 @@ app.use(express.static(publicDirectoryPath));
 app.get('', (req, res) => {
 	res.render('index', {
 		author: 'Christopher Lampert',
+		title: 'About Me',
 		job: 'Test Manager'
 	});
 });
