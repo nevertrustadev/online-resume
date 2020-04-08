@@ -68,12 +68,12 @@ a {
 }
 
 li a:focus {
-    color: #E7F59E;
+    color: #0000ff;
 }
 
 
 li a:hover {
-    color: #E7F59E;
+    color: #0000ff;
 }
 
 
@@ -85,9 +85,17 @@ li a:hover {
 .content-wrap {
      max-width: 950px;
      margin: 0 auto;
-     padding-top: 50px;
-     padding-bottom: 50px;
      overflow: auto;
+}
+
+.content-border {
+    padding: 50px 20px;
+    border-left: #000000 solid 2px;
+    border-right: #000000 solid 2px;
+}
+.header-footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .header-content-wrap {
@@ -205,12 +213,12 @@ nav a {
                  Work Experience Styles
 ************************************************************/
 .content {
-    background: linear-gradient(rgba(69,105,144, 0.8), rgba(69,105,144, 0.8)),
-                url(../img/background-2.jpg) no-repeat fixed;
-	background-size: cover;
-    border-bottom: 2px solid #000000;
-    border-top: 2px solid #000000;
-    color: #F1F7EE;
+    /*background: linear-gradient(rgba(69,105,144, 0.8), rgba(69,105,144, 0.8)),*/
+    /*            url(../img/background-2.jpg) no-repeat fixed;*/
+	/*background-size: cover;*/
+    border-bottom: 4px solid #000000;
+    border-top: 4px solid #000000;
+    color: #000000;
     position: relative;
 }
 
