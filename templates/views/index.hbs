@@ -4,8 +4,6 @@
         <title>{{title}} | {{author}}</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script src="../node_modules/focus-visible/dist/focus-visible.min.js" defer></script>
-        <script src="../node_modules/wicg-inert/dist/inert.min.js" defer></script>
         <link rel="stylesheet" href="/css/styles.css">
         <link rel="icon" href="/img/light-bulb.png">
         <script src="/js/footer.js" defer></script>
@@ -13,18 +11,15 @@
         <script src="/js/main.js" defer></script>
     </head>
     <body>
-        <div class="main-content">
+        <div class="main-content  outer-wrap">
             {{>header}}
-            <main role="main">
-                <section class="content">
-                    <div class="content-wrap content-border">
-                        <h2>About Me</h2>
-                        <p>As a Tester I focus on the user experience and making the web accessible for everyone.</p>
-                        <p>As an Agile Evangelist I focus on improving throughput of my teams and promote a varied way of working with colleagues</p>
-<!--                        <a class="image-credit" href="https://unsplash.com/@markusspiske?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge" target="_blank" rel="noopener noreferrer" title="Download free do whatever you want high-resolution photos from Markus Spiske"><i class="fa fa-camera" aria-hidden="true"></i>Markus Spiske</a>-->
-                    </div>
-                </section>
-            </main>
+            <section class="content layer2">
+                <div class="content-wrap">
+                    <h2>About Me</h2>
+                    <p>As a Tester I focus on the user experience and making the web accessible for everyone.</p>
+                    <p>As an Agile Evangelist I focus on improving throughput of my teams and promote a varied way of working with colleagues</p>
+                </div>
+            </section>
         </div>
         {{>footer}}
     </body>
