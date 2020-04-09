@@ -138,11 +138,9 @@ li a:hover {
     margin-bottom: 5px;
 }
 
-.btn {
-    background: none;
-    border: none;
+.error {
+    color: #FF0000;
 }
-
 /************************************************************
                  Header & Footer Styles
 ************************************************************/

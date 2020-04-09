@@ -48,7 +48,7 @@ app.get('/work', (req, res) => {
 app.get('*', (req, res) => {
 	res.render('404', {
 		title: '404 - Page not found',
-		error: 'oops the page you are looking for cannot be found',
+		error: 'Oops the page you are looking for cannot be found',
 		author: 'Christopher Lampert',
 		job: 'Test Manager'
 	});

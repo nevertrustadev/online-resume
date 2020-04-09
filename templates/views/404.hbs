@@ -14,7 +14,11 @@
     <div class="main-content outer-wrap">
         {{>header}}
             <section class="content layer2">
-                {{error}}
+                <div class="content-wrap">
+                    <h2 class="error">{{title}}</h2>
+                    <p>{{error}}</p>
+                </div>
+
             </section>
     </div>
     {{>footer}}
